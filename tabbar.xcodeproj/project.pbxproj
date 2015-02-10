@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		820F4BF41A8854AE006200AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820F4BF31A8854AE006200AC /* AppDelegate.swift */; };
-		820F4BF61A8854AE006200AC /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820F4BF51A8854AE006200AC /* FirstViewController.swift */; };
-		820F4BF81A8854AE006200AC /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820F4BF71A8854AE006200AC /* SecondViewController.swift */; };
 		820F4BFB1A8854AE006200AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 820F4BF91A8854AE006200AC /* Main.storyboard */; };
 		820F4BFD1A8854AE006200AC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 820F4BFC1A8854AE006200AC /* Images.xcassets */; };
 		820F4C001A8854AE006200AC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 820F4BFE1A8854AE006200AC /* LaunchScreen.xib */; };
 		820F4C0C1A8854AE006200AC /* tabbarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820F4C0B1A8854AE006200AC /* tabbarTests.swift */; };
+		825C25B51A88A17600654BE3 /* TabTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825C25B41A88A17600654BE3 /* TabTwoViewController.swift */; };
+		825C25B71A88A18700654BE3 /* TabOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825C25B61A88A18700654BE3 /* TabOneViewController.swift */; };
+		825C25B91A890F6100654BE3 /* ThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825C25B81A890F6100654BE3 /* ThreeViewController.swift */; };
+		825C25BB1A890F6C00654BE3 /* FourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825C25BA1A890F6C00654BE3 /* FourViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,14 +32,16 @@
 		820F4BEE1A8854AE006200AC /* tabbar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tabbar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		820F4BF21A8854AE006200AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		820F4BF31A8854AE006200AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		820F4BF51A8854AE006200AC /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		820F4BF71A8854AE006200AC /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		820F4BFA1A8854AE006200AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		820F4BFC1A8854AE006200AC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		820F4BFF1A8854AE006200AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		820F4C051A8854AE006200AC /* tabbarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tabbarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		820F4C0A1A8854AE006200AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		820F4C0B1A8854AE006200AC /* tabbarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabbarTests.swift; sourceTree = "<group>"; };
+		825C25B41A88A17600654BE3 /* TabTwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabTwoViewController.swift; sourceTree = "<group>"; };
+		825C25B61A88A18700654BE3 /* TabOneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TabOneViewController.swift; path = ../TabOneViewController.swift; sourceTree = "<group>"; };
+		825C25B81A890F6100654BE3 /* ThreeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreeViewController.swift; sourceTree = "<group>"; };
+		825C25BA1A890F6C00654BE3 /* FourViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,9 +83,11 @@
 		820F4BF01A8854AE006200AC /* tabbar */ = {
 			isa = PBXGroup;
 			children = (
+				825C25B61A88A18700654BE3 /* TabOneViewController.swift */,
 				820F4BF31A8854AE006200AC /* AppDelegate.swift */,
-				820F4BF51A8854AE006200AC /* FirstViewController.swift */,
-				820F4BF71A8854AE006200AC /* SecondViewController.swift */,
+				825C25B81A890F6100654BE3 /* ThreeViewController.swift */,
+				825C25BA1A890F6C00654BE3 /* FourViewController.swift */,
+				825C25B41A88A17600654BE3 /* TabTwoViewController.swift */,
 				820F4BF91A8854AE006200AC /* Main.storyboard */,
 				820F4BFC1A8854AE006200AC /* Images.xcassets */,
 				820F4BFE1A8854AE006200AC /* LaunchScreen.xib */,
@@ -215,9 +221,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				820F4BF81A8854AE006200AC /* SecondViewController.swift in Sources */,
 				820F4BF41A8854AE006200AC /* AppDelegate.swift in Sources */,
-				820F4BF61A8854AE006200AC /* FirstViewController.swift in Sources */,
+				825C25B71A88A18700654BE3 /* TabOneViewController.swift in Sources */,
+				825C25BB1A890F6C00654BE3 /* FourViewController.swift in Sources */,
+				825C25B51A88A17600654BE3 /* TabTwoViewController.swift in Sources */,
+				825C25B91A890F6100654BE3 /* ThreeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +417,7 @@
 				820F4C111A8854AE006200AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		820F4C121A8854AE006200AC /* Build configuration list for PBXNativeTarget "tabbarTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +426,7 @@
 				820F4C141A8854AE006200AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

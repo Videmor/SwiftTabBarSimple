@@ -16,6 +16,33 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        let tabBarController = UITabBarController()
+        
+//        UITabBar.appearance().selectedImageTintColor = UIColor.yellowColor()
+        
+        let myVC1 = TabOneViewController(nibName: nil, bundle: nil)
+        myVC1.view.backgroundColor = UIColor.redColor()
+        let myVC2 = TabTwoViewController(nibName: nil, bundle: nil)
+        myVC2.view.backgroundColor = UIColor.yellowColor()
+        let myVC3 = ThreeViewController(nibName: nil, bundle: nil)
+        myVC3.view.backgroundColor = UIColor.blueColor()
+        let myVC4 = FourViewController(nibName: nil, bundle: nil)
+        myVC4.view.backgroundColor = UIColor.grayColor()
+        
+        let controllers = [myVC1,myVC2, myVC3, myVC4]
+        tabBarController.viewControllers = controllers
+        
+        window?.rootViewController = tabBarController
+        
+        let firstImage = UIImage(named: "airplane mode")
+        let secondImage = UIImage(named: "archive")
+        let threeImage = UIImage(named: "inbox")
+        let fourImage = UIImage(named: "flag")
+        myVC1.tabBarItem = UITabBarItem(title: "icon 1", image: firstImage, tag: 1)
+        myVC2.tabBarItem = UITabBarItem(title: "icon 2", image: secondImage, tag:2)
+        myVC3.tabBarItem = UITabBarItem(title: "icon 3", image: threeImage, tag:3)
+        myVC4.tabBarItem = UITabBarItem(title: "icon 4", image: fourImage, tag:4)
+        
         return true
     }
 
